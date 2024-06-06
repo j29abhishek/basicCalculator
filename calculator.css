@@ -126,4 +126,11 @@ form input.equal{
     }
     .container{
          background-color: rgb(4, 17, 64);
+    }
+  }
+
+ @media screen and (max-width:500px){
+    .container{
+        background-color: rgb(4, 17, 64);
+    }
   }
