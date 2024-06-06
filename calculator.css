@@ -1,0 +1,127 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    font-family: roboto;
+    box-sizing: border-box;
+
+}
+
+.container{
+    width:100%;
+    height:100vh;
+    background-image: url("./wallpaper2.jpg");
+   
+    /* background-clip: border-box; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.background{
+    position: absolute;
+    background-color: rgb(5, 33, 125);
+    border-radius: 30px;
+}
+
+.calculator{
+    height:600px;
+    width:322;
+    background-color: #020012;
+    padding:20px;
+    border-radius: 30px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    background-color: rgba(9, 9, 9, 0.5);
+    /* background: transparent; */
+
+}
+
+.calculator::after{
+    background-color: rgb(5, 33, 125);
+}
+.container #result{
+    height:150px;
+}
+.calculator form input{
+    border:0;
+    outline:0;
+    /* padding:5px; */
+    margin:3px;
+    width:60px;
+    height:60px;
+    border-radius: 10px;
+    box-shadow: -2px -2px 2px rgba(10, 2, 54, 0.916),2px 2px 3px rgba(0,0,0,0.2);
+    background: transparent;
+    font-size: 20px;
+    color:#fff;
+}
+
+form .display{
+    display: flex;
+    justify-content:flex-end;
+    margin:20px 0px;
+}
+
+form .display input{
+    text-align: right;
+    flex:1;
+    font-size: 45px;
+    box-shadow: none;
+}
+
+form input.equal{
+    width:125px;
+    margin-top: 2px;
+}
+
+.footer{
+    position: absolute;
+    bottom: 10px;
+    left:20px;
+}
+
+
+@media screen and (max-width: 430px) {
+    .calculator{
+        width:100%;
+        margin:0px;
+        height:100%;
+        border-radius: 0px;
+        
+        
+    }
+
+    input button{
+        font-size: 40px;
+    }
+    .container #result{
+        height:200px;
+    }
+
+    form input{
+        height: 80px;
+        width:80px;
+
+    }
+
+    .background{
+        width: 100%;
+        height: 100%;
+        border-radius: 0px;
+        margin-top: 0px;
+    }
+
+    .row{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap:1.2rem;
+        
+    }
+  }
