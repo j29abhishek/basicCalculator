@@ -124,4 +124,6 @@ form input.equal{
         gap:1.2rem;
         
     }
+    .container{
+         background-color: rgb(4, 17, 64);
   }
